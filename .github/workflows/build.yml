@@ -19,4 +19,4 @@ jobs:
         shell: bash
         run: |
             curl -Ls https://sh.jbang.dev | bash -s - app setup
-            ~/.jbang/bin/jbang .github/Calculator.java
+            ~/.jbang/bin/jbang .github/workflows/Calculator.java

@@ -1,8 +1,10 @@
 name: Java CI
 
 on:
+  push:
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -19,4 +21,4 @@ jobs:
         shell: bash
         run: |
             curl -Ls https://sh.jbang.dev | bash -s - app setup
-            ~/.jbang/bin/jbang .github/Calculator.java
+            ~/.jbang/bin/jbang .github/workflows/Calculator.java
